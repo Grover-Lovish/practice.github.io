@@ -1,0 +1,378 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+h1{
+    font-size: 4rem;
+}
+img{
+    height: 250px;
+}
+
+a{
+    text-decoration: none;
+    color: #fffce8;
+}
+
+body{
+    height: 360vh;
+    background-color: #fffce8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 2.5fr 2fr 3fr 3fr 2.5fr 3fr 0.5fr;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fffce8;
+    background-image: url(images/Sprinkle.svg);
+}
+
+.container-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+    background-image: url(images/bg2.svg);
+    background-size: cover;
+}
+
+.frame-1{
+    width: 500px;
+    flex-grow: 5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: #3e363f;
+    font-size: 3rem;
+}
+.title-bl{
+    color: #fffce8;
+    font-size: 3rem;
+    padding-top: 2%;
+}
+.info-bl{
+    color: #fffce8;
+    font-size: 1.5rem;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.info{
+    color: #3e363f;
+    font-size: 1.5rem;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.image-frame-1{
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: stretch;
+    background-image: url(images/Shiny\ Overlay.svg);
+    background-size: cover;
+}
+
+.frame-2{
+    width: 500px;
+    flex-grow: 5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-frame-2{
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+    background-image: url(images/bg3.svg);
+    background-size: cover;
+}
+
+.frame-3{
+    text-align: center;
+}
+.charts{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+h3{
+    text-align: center;
+    padding-bottom: 3%;
+    color: #b8b42d;
+    font-size: 1.5rem;
+}
+
+ul{
+    list-style: none;
+}
+ul li::before {
+    content: "\2022";
+    color: #dd403a;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+.box{
+    margin: 3%;
+    background-color: #fffce8;
+    padding: 3%;
+    border-radius: 25%;
+    box-shadow: 10px 10px 70px;
+}
+.container-4{
+    width: 100%;
+    height: 100%;
+}
+.frame-4{
+    background-image: url(images/Hexagon.svg);
+    background-size: cover;
+}
+#diff{
+    text-align: center;
+}
+
+.difference{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+h2{
+    text-align: center;
+    color: #b8b42d;
+    font-size: 2rem;
+}
+.box-2{
+    margin: 3%;
+    background-color: #fffce8;
+    padding: 3%;
+    box-shadow: 10px 10px 70px;
+}
+.fc{
+    font-size: 1.2rem;
+}
+
+.credits{
+    background-color: #3e363f;
+    display: grid;
+    justify-content: center ;
+    align-items: center;
+    font-size: 2rem;
+}
+
+u{
+    text-decoration-color: #697a21;
+}
+
+
+
+@media only screen and (max-width: 479px){ 
+    body{
+        height: 410vh;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    img{
+        height: 120px;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .info{
+        font-size: 1.2rem;
+    }
+    .title-bl{
+        font-size: 2rem;
+    }
+    .info-bl{
+        font-size: 1.2rem;
+    }
+    .fc{
+        font-size: 0.9rem;
+    }
+    .container-1{
+        flex-direction: column-reverse;
+    }
+    .frame-1{
+        width: auto;
+    }
+    .container-2{
+        flex-direction: column-reverse;
+    }
+    .frame-2{
+        width: auto;
+    }
+    .box-2{
+        margin: 5%;
+        text-align: center;
+    }
+    .box{
+        border-radius: 0%;
+        text-align: center;
+    }
+    .charts{
+        flex-direction: column;
+    }
+    .difference{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+ }
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+    body{
+        height: 410vh;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    img{
+        height: 120px;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .info{
+        font-size: 1.2rem;
+    }
+    .title-bl{
+        font-size: 2rem;
+    }
+    .info-bl{
+        font-size: 1.2rem;
+    }
+    .fc{
+        font-size: 0.9rem;
+    }
+    .container-1{
+        flex-direction: column-reverse;
+    }
+    .frame-1{
+        width: auto;
+    }
+    .container-2{
+        flex-direction: column-reverse;
+    }
+    .frame-2{
+        width: auto;
+    }
+    .box-2{
+        margin: 5%;
+        text-align: center;
+    }
+    .box{
+        border-radius: 0%;
+        text-align: center;
+    }
+    .charts{
+        flex-direction: column;
+    }
+    .difference{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+    body{
+        height: 410vh;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    img{
+        height: 170px;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    .info{
+        font-size: 1.7rem;
+    }
+    .title-bl{
+        font-size: 3rem;
+    }
+    .info-bl{
+        font-size: 1.5rem;
+    }
+    .fc{
+        font-size: 1.1rem;
+    }
+    .container-1{
+        flex-direction: column-reverse;
+    }
+    .frame-1{
+        width: auto;
+    }
+    .container-2{
+        flex-direction: column-reverse;
+    }
+    .frame-2{
+        width: auto;
+    }
+    .box-2{
+        margin: 5%;
+        text-align: center;
+    }
+    .box{
+        border-radius: 0%;
+        text-align: center;
+    }
+    .charts{
+        flex-direction: column;
+    }
+    .difference{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+ }
